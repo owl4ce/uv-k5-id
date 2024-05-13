@@ -298,7 +298,7 @@ Tekan lama tombol *`EXIT`* untuk kembali ke halaman utama.
 | 9 | `TxOffs` | Nilai *Offset* Frekuensi Pemancar. | Isi manual dalam MHz! |
 | 10 | `RxOffs` | Nilai *Offset* Frekuensi Penerima. | Isi manual dalam MHz! |
 | 11 | `Scramb` | Pengacak, distorsikan audio agar tidak dapat dipahami oleh pendengar lain. Jika radio menggunakan pengaturan yang sama, maka mereka dapat berkomunikasi dengan jelas. | OFF, 2600Hz, 2700Hz, 2800Hz, 2900Hz, 3000Hz, 3100Hz, 3200Hz, 3300Hz, 3400Hz, 3500Hz. |
-| 12 | `BusyCL` | Penguncian Saluran Sibuk, halangi transmisi radio karena sinyal diterima; dengan *BUSY* pada layar saat PTT ditekan. | OFF, ON. |
+| 12 | `BusyCL` | Penguncian Saluran Sibuk, halangi transmisi radio karena sinyal diterima; dengan *BUSY* pada layar saat tombol PTT ditekan. | OFF, ON. |
 | 13 | `Compnd` | Kompander, *compressor-expander*, memungkinkan sinyal dengan rentang dinamis besar ditransmisikan melalui fasilitas yang memiliki kemampuan rentang dinamis lebih kecil. Ini meningkatkan kualitas audio dan kedua radio harus menggunakan pengaturan yang sama. | OFF, TX, RX, TX/RX. |
 | 14 | `Demodu` | Mode Demodulator, FM untuk umum, AM/USB (SSB) hanya untuk mendengarkan/monitor. | FM, AM, USB. |
 | 15 | `RxAGC` | AGC Penerima yang berlaku untuk semua modulasi, memungkinkan melindungi radio dari gangguan yang disebabkan oleh penerimaan sinyal kuat. Pengaturan SLOW dengan rentang dinamis besar ideal secara keseluruhan dan mungkin berguna untuk stasiun HF-AM yang menyiarkan musik, FAST dengan rentang dinamis lebih kecil ideal untuk aviasi komunikasi singkat yang mana setiap kata sangatlah penting. | OFF, SLOW, FAST. |
@@ -355,8 +355,8 @@ Tekan lama tombol *`EXIT`* untuk kembali ke halaman utama.
 
 ### Operasi Dasar dan Konfigurasi
 
-Tampilan radio dibagi menjadi dua, saluran/frekuensi (MR/VFO) yang atas dan yang bawah. Anda dapat mengalihkan
-atas/bawah dengan menekan tombol kombinasi `F` + `2`, atau dengan tekan lama tombol `2`.
+Tampilan radio dibagi menjadi dua, saluran/frekuensi (MR/VFO) yang atas dan yang bawah. Anda dapat
+mengalihkan atas/bawah dengan menekan tombol kombinasi `F` + `2`, atau dengan tekan lama tombol `2`.
 
 - VFO utama ditandai dengan `▶`, dan PTT aktif dengan indikator `▶ TX`.
 - Penerimaan akan ditandai dengan indikator `RX` segera sesaat sinyal diterima, sementara VFO lain diblokir.
@@ -364,22 +364,22 @@ atas/bawah dengan menekan tombol kombinasi `F` + `2`, atau dengan tekan lama tom
 - Bila tiada sinyal yang diterima setelah empat (4) detik, dengan status `><` pada layar,
   maka indikator status tersebut akan kedaluwarsa.
 
-Setiap VFO dapat beroperasi secara independen dari setiap fungsi lain pada mode saluran/frekuensi. Untuk mengubah mode,
-pilih VFO atas/bawah yang dituju dan tekan tombol kombinasi `F` + `3`, atau dengan tekan lama tombol `3`.
+Setiap VFO dapat beroperasi secara independen dari setiap fungsi lain pada mode saluran/frekuensi. Untuk mengubah
+mode, pilih VFO atas/bawah yang dituju dan tekan tombol kombinasi `F` + `3`, atau dengan tekan lama tombol `3`.
 
 Dalam mode frekuensi, Anda perlu memasukkan frekuensi secara manual menggunakan tombol keypad. Anda juga dapat mengubah
 pilihan yang berbeda untuk pengaturan VFO spesifik: tiga belas (13) parameter pertama pada menu. Jika Anda sedang
 menyiapkan VFO, pengaturan dapat disimpan ke saluran-memori dengan pergi ke parameter `ChSave` pada menu.
 
-Dalam mode saluran, Anda dapat beralih antar saluran-memori yang tersimpan. Saluran-memori dapat ditambahkan secara
-manual seperti pada penjelasan sebelumnya, atau dengan perangkat lunak komputer tertentu.
+Dalam mode saluran, Anda dapat beralih antar saluran-memori yang tersimpan. Saluran-memori dapat ditambahkan
+secara manual seperti pada penjelasan sebelumnya, atau dengan perangkat lunak komputer tertentu.
 
 ### Pemindaian Saluran/Frekuensi (MR/VFO)
 
 #### Pemindaian Frekuensi
 
-Untuk memulai pemindaian frekuensi, ubah mode saluran (MR) ke frekuensi (VFO). Atur frekuensi awal dan langkah
-frekuensi (lihat menu nomor 1). Mulai pemindaian dengan tekan lama tombol `*`.
+Untuk memulai pemindaian frekuensi, ubah mode saluran (MR) ke frekuensi (VFO). Atur frekuensi awal
+dan langkah frekuensi (lihat menu nomor 1). Mulai pemindaian dengan tekan lama tombol `*`.
 
 ##### Rentang Pemindaian Frekuensi (ScnRng)
 
@@ -391,8 +391,8 @@ frekuensi (lihat menu nomor 1). Mulai pemindaian dengan tekan lama tombol `*`.
    awal/terakhir dari sinyal yang diterima, dan lanjutkan dengan tombol `*`; atau
 6. Tekan lama tombol *`EXIT`* untuk keluar dari mode pemindaian ScnRng.
 
-Mode pemindaian ini juga didukung mode Analisa Spektrum Frekuensi. Bilamana Anda mengaktifkan pemindaian ScnRng,
-lalu aktifkan saja mode Analisa Spektrum Frekuensi.
+Mode pemindaian ini juga didukung mode Analisa Spektrum Frekuensi. Bilamana Anda mengaktifkan
+pemindaian ScnRng, lalu aktifkan saja mode Analisa Spektrum Frekuensi.
 
 #### Pemindaian Saluran-Memori
 
@@ -401,6 +401,53 @@ Radio memiliki dua (2) daftar pindaian. Setiap saluran-memori dapat menjadi bagi
 0, 1, atau 2. Untuk menambahkan/menghapus saluran dari daftar, pilih saluran yang dituju pada VFO utama,
 dan pergi ke parameter `ScAdd1`/`ScAdd2` pada menu. Atau, dengan tekan lama tombol `5`, Anda dapat melihat
 indikator `I` dan `II` silih berganti hidup atau mati di sisi kanan dari label saluran pada layar.
+
+Jika Anda mengatur daftar pindaian, Anda dapat mulai pemindaian dengan tekan lama tombol `*`.
+Jika Anda menekan tombol `F` atau tekan lama tombol `*` saat memindai, maka daftar pindaian akan diubah,
+lalu Anda akan melihat ikon terkait di sebelah kiri-atas pada layar: 1, 2, atau * (semua). Daftar pindaian
+aktif juga dapat diubah melalui parameter `SList` pada menu. Anda dapat melihat daftar pindaian dan
+saluran-saluran-nya dengan pergi ke parameter `SList1`/`SList2` pada menu.
+
+#### Fitur Pemindaian Saluran/Frekuensi Umum
+
+Anda dapat mengubah arah pemindaian saat memindai dengan menekan tombol `▲`/`▼`.
+Pemindaian dapat diberhentikan dengan menekan tombol *`EXIT`*, hasil pindaian akan diabaikan
+dan saluran/frekuensi akan dikembalikan ke yang telah diatur sebelum pemindaian dimulai. Atau,
+Anda dapat memberhentikan pemindaian dengan PTT atau tombol *`M`*, saluran/frekuensi
+akan dikembalikan ke saluran terakhir yang transmisinya ditemukan.
+
+### Pemindaian Frekuensi Tunggal (Penyalinan Frekuensi) dan Pemindaian CTCSS/DCS
+
+Fungsi ini akan mengizinkan Anda untuk menelusuri dan menyalin frekuensi dengan pengaturannya.
+Pencarian frekuensi hanya akan berlaku untuk sinyal-sinyal kuat. Radio yang melakukan transmisi
+harus sedekat mungkin. Mulai penyalinan frekuensi dengan menekan tombol kombinasi `F` + `4`,
+atau dengan tekan lama tombol `4`. Layar pemindaian akan terbuka. Tekan dan tahan tombol PTT
+pada radio lain. Tunggu beberapa detik, hingga frekuensi dan kode (jika digunakan) ditampilkan
+pada layar. Pengaturan dapat disimpan dengan menekan tombol *`M`*. Pengaturan akan disimpan
+ke saluran ataupun VFO utama, tergantung dalam mode apa saat Anda memulai pemindaian.
+
+Anda juga dapat hanya mencari kode CTCSS/DCS untuk frekuensi yang diatur pada VFO utama. Pilih saluran
+atau frekuensi yang diinginkan dan tekan tombol kombinasi `F` + `*`. Layar pemindaian yang sama akan terbuka,
+tetapi pencarian frekuensi akan dihilangkan, dan frekuensi dari VFO utama justru akan digunakan. Tunggu
+sinyal radio tampil atau tekan tombol PTT pada radio lain. Ini memerlukan sekitar satu hingga dua detik
+untuk kode ditemukan. Prosedur menyimpan pengaturan ialah sama seperti di atas.
+
+Terdapat pilihan lain untuk mencari kode CTCSS/DCS. Pilih saluran atau frekuensi yang diinginkan.
+Pergi ke parameter `RxDCS` atau `RxCTCS` pada menu. Konfirmasi parameter dan tekan tombol `*`. Status
+SCAN akan tampil. Tunggu sinyal radio tampil atau tekan tombol PTT pada radio lain. Saat kode ditemukan,
+maka status SCAN akan lenyap, simpan dan konfirmasi parameter dengan menekan tombol *`M`*.
+
+Pemindai CTCSS dapat digunakan untuk mendeteksi Nada Ekor *Squelch* yang radio lain gunakan.
+Tunggu beberapa saat dan lakukan beberapa transmisi karena transmisi nada ekor yang sangat pendek.
+Saat nada ekor ditemukan, atur nilai yang ditemukan dengan pergi ke parameter `SqTone` pada menu.
+
+Selama pemindaian, indikator LED RX akan dihidupkan bila tingkat sinyal lebih dari lima (>5).
+Karena audio tidak diperdengarkan saat pemindaian, ini memberitahu bahwa ada aktivitas terdeteksi.
+
+### Nada-Ledakan 1750Hz untuk Akses Pengulang (*Repeater*) dan Nada DTMF
+
+Saat tombol PTT ditekan dan ditahan, 1750Hz dapat diaktifkan dengan kombinasi menekan tombol samping 2.
+Nada DTMF dapat ditransmisikan dengan menekan tombol keypad sesuai keinginan.
 
 <!-- ... -->
 
