@@ -1,6 +1,6 @@
-<pre align="center">
-<img align="center" width="96%" src="./src-images/quansheng-uv-k6-uv-k5-broadcast-owl4ce.webp"/>
-</pre>
+| PEMANTAUAN | PENYIARAN |
+|:---:|:---:|
+| <img align="center" width="96%" src="./src-images/quansheng-uv-k6-uv-k5-owl4ce.webp"/> | <img align="center" width="96%" src="./src-images/quansheng-uv-k6-uv-k5-broadcast-owl4ce.webp"/> |
 
 ```
 RADIO DUA-ARAH MULTIFUNGSI
@@ -449,6 +449,37 @@ Karena audio tidak diperdengarkan saat pemindaian, ini memberitahu bahwa ada akt
 Saat tombol PTT ditekan dan ditahan, 1750Hz dapat diaktifkan dengan kombinasi menekan tombol samping 2.
 Nada DTMF dapat ditransmisikan dengan menekan tombol keypad sesuai keinginan.
 
-<!-- ... -->
+## Analisa Spektrum Frekuensi
 
-**Dalam proses penyusunan struktur dan pengalihan bahasa ...**
+Lihat dokumen terpisah yang memuat manual dari mode Analisa Spektrum Frekuensi.
+
+## SMS (*Messenger*)
+
+Di halaman utama, atur frekuensi untuk VFO utama yang akan digunakan untuk kirim-terima pesan.
+Aktifkan mode SMS dengan menekan tombol kombinasi `F` + *`M`*.
+
+| | | | T9 |
+|:---:|:---:|:---:|:---:|
+| **1** ,.?! | **2** ABC | **3** DEF | __*__ ▴▾⅑ |
+| **4** GHI | **5** JKL | **6** MNO | **0** ␣ |
+| **7** PQRS | **8** TUV | **9** WXYZ | **F** ⧏ |
+
+| Tombol | Aksi |
+|:---|:---|
+| `*` | Mengubah *letter case*/mode masukan: TINGGI (*UPPERCASE*), rendah (*lowercase*), dan numerik. |
+| `0` | Masukkan satu aksara spasi, kecuali dalam mode numerik. |
+| `F` | Hapus satu aksara ke kiri. Tekan lama dan lepaskan tombol ini untuk menghapus seluruh pesan. |
+| `▲` | Masukkan kembali pesan terakhir yang terkirim. |
+| *`M`* | Transmisikan pesan dalam frekuensi yang diatur pada VFO utama. |
+| *`EXIT`* | Keluar dari mode SMS, dan kembali ke halaman utama. |
+
+Saat radio berada pada frekuensi yang tepat dan pesan diterima, tetapi mode SMS tidak diaktifkan, Anda
+akan menerima notifikasi audio dan status dengan ikon amplop pada layar. Indikator (ACK) `+` akan ditampilkan
+(di sebelah kiri) pada pesan terkirim dalam mode SMS ketika pesan berhasil diterima pada radio lain.
+
+## Radio FM Fungsional
+
+Di halaman utama, atur frekuensi untuk VFO utama dengan nol-transmisi untuk mencegah interupsi (*bug*)
+ketika memonitor lebih dari satu frekuensi. Aktifkan mode Radio FM dengan menekan tombol kombinasi
+`F` + `0`, atau dengan tekan lama tombol `0`. Tekan tombol `▲`/`▼` untuk menyetel saluran,
+dan tombol *`EXIT`* untuk keluar dari mode Radio FM.
