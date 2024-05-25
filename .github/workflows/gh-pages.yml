@@ -19,7 +19,7 @@ jobs:
         with:
           input_path: ID.MANUALS.NUNU-20.5
           output_dir: pdfs
-          images_dir: ../src-images
+          images_dir: src-images
           image_import: ./src-images
           build_html: false
 
