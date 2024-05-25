@@ -1,0 +1,30 @@
+name: Docs to PDF
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  converttopdf:
+    name: Build PDF
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_path: SU-Manual.md
+          output_dir: pdfs
+          images_dir: src-images
+          image_import: ./src-images
+          build_html: false
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: "Quansheng UV-K5 Indonesian Enhanced Beginners' Guide"
+          path: pdfs
+          compression-level: 9
