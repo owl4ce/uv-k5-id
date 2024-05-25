@@ -11,13 +11,13 @@ sederhana dan mudah melalui program peramban web yang berbasis Chromium: Edge, O
 4. Sambungkan K-plug kabel pemrograman ke radio dengan "pas" untuk memastikan radio terhubung dengan baik;
 5. Pada peramban web komputer Anda, buka halaman URL https://kamilsss655.github.io/uvtools/?firmwareURL=https://github.com/kamilsss655/uv-k5-firmware-custom/releases/download/v.20.5/firmware.packed.bin
    dan tunggu beberapa saat hingga log menunjukkan keluaran sebagai berikut.
-```
-Loading file from url: https://github.com/kamilsss655/uv-k5-firmware-custom/releases/download/v.20.5/firmware.packed.bin
+   ```
+   Loading file from url: https://github.com/kamilsss655/uv-k5-firmware-custom/releases/download/v.20.5/firmware.packed.bin
 
-CRC check passed...
-Detected firmware version: *NUNU v.20.5
-Firmware uses 99.08% of available memory (60872/61439 bytes).
-```
+   CRC check passed...
+   Detected firmware version: *NUNU v.20.5
+   Firmware uses 99.08% of available memory (60872/61439 bytes).
+   ```
    Kemudian, klik "Flash firmware" dan muncul jendela, pilih USB serial yang sesuai dan klik sambungkan.
    Jacklight radio akan menyala berkedip yang menandakan radio sedang dalam pembaruan firmware;
 6. Tunggu hingga persentase proses 100% dengan "Successfully flashed firmware." pada antarmuka log dari peramban web;
