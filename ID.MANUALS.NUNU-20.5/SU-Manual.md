@@ -510,6 +510,8 @@ ketika memonitor lebih dari satu frekuensi. Aktifkan mode Radio FM dengan meneka
 `F` + `0`, atau dengan tekan lama tombol `0`. Tekan tombol `▲`/`▼` untuk menyetel saluran,
 dan tombol *`EXIT`* untuk keluar dari mode Radio FM.
 
+<br>
+
 ```
 Disusun (alih bahasa) dan ditulis oleh owl4ce.
 © 2024 owl4ce / Hortensia V.
