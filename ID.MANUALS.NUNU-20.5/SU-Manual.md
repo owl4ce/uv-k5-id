@@ -1,6 +1,10 @@
+<!--
+
 | PEMANTAUAN | PENYIARAN |
 |:---:|:---:|
 | <img align="center" width="96%" src="./src-images/quansheng-uv-k6-uv-k5-owl4ce.webp"/> | <img align="center" width="96%" src="./src-images/quansheng-uv-k6-uv-k5-broadcast-owl4ce.webp"/> |
+
+-->
 
 ```
 RADIO DUA-ARAH MULTIFUNGSI
@@ -89,6 +93,32 @@ Dan ini memberi Anda informasi penting tentang cara mengoperasikan radio portabe
 3. Jangan menyebabkan hubungan arus pendek pada terminal baterai atau membuang baterai ke dalam api.
 4. Jangan melepas penutup baterai tanpa izin.
 
+## Mem-*flash* Firmware
+
+Melakukan pembaruan firmware ialah memungkinkan melalui program terpisah, tetapi itu bahkan lebih
+sederhana dan mudah melalui program peramban web yang berbasis Chromium: Edge, Opera, dsb.
+
+1. Gunakan kabel pemrograman dengan tipe konektor Kenwood K-plug
+   ([Baofeng](https://www.baofengradio.com/products/baofeng-programming-cable), dsb.), dan sambungkan USB ke komputer;
+2. Matikan radio dengan memutar knob ke kanan hingga "klik";
+3. Hidupkan radio dalam mode pemrograman dengan menekan dan tahan tombol PTT, lalu putar knob ke kiri. Kemudian,
+   lepaskan PTT dan pastikan jacklight menyala stabil yang menandakan radio sedang dalam mode pemrograman;
+4. Sambungkan K-plug kabel pemrograman ke radio dengan "pas" untuk memastikan radio terhubung dengan baik;
+5. Pada peramban web komputer Anda, buka halaman URL https://kamilsss655.github.io/uvtools/?firmwareURL=https://github.com/kamilsss655/uv-k5-firmware-custom/releases/download/v.20.5/firmware.packed.bin
+   dan tunggu beberapa saat hingga log menunjukkan keluaran sebagai berikut.
+   ```
+   Loading file from url: https://github.com/kamilsss655/uv-k5-firmware-custom/releases/download/v.20.5/firmware.packed.bin
+
+   CRC check passed...
+   Detected firmware version: *NUNU v.20.5
+   Firmware uses 99.08% of available memory (60872/61439 bytes).
+   ```
+   Kemudian, klik "Flash firmware" dan muncul jendela, pilih USB serial yang sesuai dan klik sambungkan.
+   Jacklight radio akan menyala berkedip yang menandakan radio sedang dalam pembaruan firmware;
+6. Tunggu hingga persentase proses 100% dengan "Successfully flashed firmware." pada antarmuka log dari peramban web;
+7. Ketika selesai, putuskan sambungan kabel pemrograman yang menghubungkan radio dengan komputer. Kemudian,
+   lakukan pengaturan ulang radio (ALL reset) dengan pergi ke parameter `Reset` pada menu.
+
 ## Fitur Utama
 
 - *200 Channel*
@@ -157,15 +187,11 @@ Kami menyarankan Anda memeriksa barang-barang berikut sebelum membuang bahan kem
 
 ### Foto Aksesori
 
-<pre align="center">
 <img align="center" width="96%" src="./src-images/accessories-photo.webp"/>
-</pre>
 
 ## Diagram Radio
 
-<pre align="center">
 <img align="center" width="96%" src="./src-images/radio-diagram.webp"/>
-</pre>
 
 <p align="center">
 Fungsi pengisian daya TYPE-C pada rangkaian produk ini bersifat opsional.<br>
@@ -483,3 +509,17 @@ Di halaman utama, atur frekuensi untuk VFO utama dengan nol-transmisi untuk menc
 ketika memonitor lebih dari satu frekuensi. Aktifkan mode Radio FM dengan menekan tombol kombinasi
 `F` + `0`, atau dengan tekan lama tombol `0`. Tekan tombol `▲`/`▼` untuk menyetel saluran,
 dan tombol *`EXIT`* untuk keluar dari mode Radio FM.
+
+```
+Disusun (alih bahasa) dan ditulis oleh owl4ce.
+© 2024 owl4ce / Hortensia V.
+https://github.com/owl4ce/uv-k5-id
+
+Dokumentasi radio diadaptasi dari produsen, Quansheng Electronics Co., Ltd..
+© Quansheng Electronics Co., Ltd.
+http://files.qsfj.com/UV-K5%288%29%20User%60s_Manual.pdf
+
+Dokumentasi firmware diadaptasi dari pemrogram, kamilsss655.
+© 2024 kamilsss655
+https://github.com/kamilsss655/uv-k5-firmware-custom/wiki
+```
